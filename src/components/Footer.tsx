@@ -10,9 +10,9 @@ export default function Footer() {
 
                 <div className="main-foot-container">
                     <div className="footer_nav">
-                        <Link href ="/" className='footer-li'>Home</Link>
-                        <Link href="/about" className='footer-li'>About</Link>
-                        <Link href="/order" className='footer-li'>Order</Link>
+                        <Link href ="/Home" className='footer-li'>Home</Link>
+                        <Link href="/About" className='footer-li'>About</Link>
+                        <Link href="/Order" className='footer-li'>Order</Link>
                     </div>
                     <div className="contact">
                         <h2 style={{ marginLeft: "1rem" }}>Contact Us</h2>

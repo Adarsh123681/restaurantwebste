@@ -1,9 +1,9 @@
 "use client";
 
 import  { useState } from 'react';
-import Data from "../../Component/Data"
-import Cards from "../../Component/Card"
-import Cart from '../../Component/Cart';
+import Data from "../../components/Data"
+import Cards from "../../components/Card"
+import Cart from '../../components/Cart';
 const myStyle={
   width  :"100vw",
   height : "45rem",

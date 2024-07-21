@@ -1,17 +1,17 @@
-import AboutItem from "../../Component/AboutItem";
+import AboutItem from "@/components/AboutItem";
 export default function page() {
   const title = "OUR MANAGING TEAM";
   const title1 = "OUR STAFF MEMBERS";
   return (
     <>
-      <div className="w-screen h-screen bg-white text-black font-">
+      <div className="bg-white text-black font-">
         {" "}
-        <div className="text-center text-xl md:text-2xl  ">
+        <div className="text-center text-2xl m-0 p-0">
           About Us
         </div>
         <div className="about_container">
           <div className="about_image">
-            <img src="./image/bg.jpg" alt="" srcSet="" className="w-30 h-30" />
+            <img src="./image/bg.jpg" alt="" srcSet="" className="w-30 h-30" style={{width:"20rem"}} />
           </div>
           <div className="about_content">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus,
