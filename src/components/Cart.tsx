@@ -1,16 +1,21 @@
-
-import Link from "next/link"
-export default function Cart() {
+"use client";
+export default function Cart(props) {
   return (
-     <>
-      <div className="cart_container" style={{ width: "98vw", height: "10rem", display:"flex", border: ".1rem solid black", borderRadius: ".3rem" , margin:"25rem 0 3rem 0rem"}}>
-      <div className="cart_img" style={{width:"30%", height:"10rem"}}>
-      <img src="image/bg.jpg" alt="" style={{ width: "7rem", height: "7rem", padding:"2rem" , marginLeft:"2rem" }} />
+    <>
+      <div
+        className={`fixed top-0 right-0 w-[30rem] h-full bg-white shadow-lg transition-all transform ${props.close} ? "-translate-x-full" : "translate-x-0"} transition-transform duration-300 ease-in-out z-50`}
+      >
+        <div className="flex justify-between items-center p-4 bg-gray-800 text-white">
+          <h2 className="text-xl">Cart</h2>
+        </div>
+        
+        <button
+          onClick={() => props.close(false)}
+          className="absolute top-4 right-4  bg-orange-700 p-2 rounded-md z-50 "
+        >
+          X
+        </button>
       </div>
-      </div>
-      <div className="cart_btn">
-      <button style={{ width: "10rem", height: "3rem", background: "red", color: "white", padding: ".1rem", border: ".2rem solid black"}}><Link href="/order" style={{ color: "white", textDecoration: "none" }}>ORDER NOW</Link></button>
-      </div>
-     </>
-  )
-} 
+    </>
+  );
+}

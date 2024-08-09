@@ -1,14 +1,14 @@
-// components/RootLayout.js
-import "./globals.css"
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
+// import Footer from "@/components/Footer";
+import "./globals.css";
+import Navbar from "@/components/Navbar"; 
+import { CartProvider } from "./Context/context";
+import Footer from "@/components/Footer";
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <head>
@@ -18,8 +18,9 @@ export default function RootLayout({
       </head>
       <body>
         <Navbar />
-        {children}
-        <Footer />
+        <CartProvider>{children}</CartProvider> 
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+        <Footer/>
       </body>
     </html>
   );

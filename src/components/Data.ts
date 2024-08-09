@@ -43,7 +43,7 @@ const Data = [
         title: "Menu",
         image: "/image/menu.webp",
         category: "dinner",
-        price: "$30", 
+        price: "$30",      
     }
 ]
 
